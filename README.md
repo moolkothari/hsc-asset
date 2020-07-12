@@ -18,7 +18,7 @@ You can see the presentation here:
 https://github.com/moolkothari/hsc-asset/blob/master/Hyperledger-Study-Circle.pdf
 
 
-# Compiling & Deploying Chaincode Using CLI
+# Run Chaincode Using CLI
 
 $ cd ~/Desktop/fabric-samples/chaincode && mkdir hscasset
 
@@ -73,6 +73,38 @@ $ peer chaincode invoke -n hscasset -c '{"Args":["Issue", "100","Issued Xray-Mac
 
 $ peer chaincode query -C myc -n hscasset -c '{"Args":["getHistory","100"]}'
 
+
+
+
+Clear the network 
+
+$ docker ps -qa | xargs docker stop
+
+$ docker rm $(docker ps -aq)
+
+$ docker network prune 
+
+$ docker volume prune
+
+# Client Application using Node SDK
+
+$ cd hscasset/client/webapp
+
+$ npm i 
+
+$ cd hscasset/client && mkdir wallet
+
+$ node enrollAdmin
+
+$ node registerUser
+
+$ ./startFabric.sh
+
+$ cd hscasset/client/webapp
+
+$ node app.js 
+
+The applicaiton will be running on http://localhost:3000/ 
 
 
 
