@@ -25,17 +25,18 @@ $ cd ~/Desktop/fabric-samples/chaincode && mkdir hscasset
 $ cd hscasset && cp ~/work/hsc-asset/chaincode/hscasset.go .
 
 
- Open Terminal one. 
-This Terminal will start the sample Fabric network. Issue the following commands:
+ Open Terminal one to start sample Fabric network, run following commands:
 
 $ cd ~/Desktop/fabric-samples/chaincode-docker-devmode
 
 $ docker-compose -f docker-compose-simple.yaml up
 
+ 
  This will bring up a network with the SingleSampleMSPSolo orderer profile. It also launches peer nodes, cli, and chaincode containers.
 
 
- Open Terminal two, Issue follow commands: 
+ Open Terminal two, run following  commands: 
+ 
 $ docker ps 
 
 $ docker exec -it chaincode bash
@@ -48,7 +49,8 @@ $ go build
 $ CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=hscasset:0 ./hscasset
 
 
- Open Terminal 3 
+ Open Terminal 3, run the following commands:
+ 
 $ docker exec -it cli bash 
 
 $ peer chaincode install -p chaincodedev/chaincode/hscasset -n hscasset -v 0
@@ -70,6 +72,8 @@ $ peer chaincode invoke -n hscasset -c '{"Args":["Ship", "100", "OEM deliver Xra
 $ peer chaincode invoke -n hscasset -c '{"Args":["Issue", "100","Issued Xray-Machine to hospital1", "Abu Dhabi"]}' -C myc
 
 $ peer chaincode query -C myc -n hscasset -c '{"Args":["getHistory","100"]}'
+
+
 
 
 Note: I have extended one of example from the Book Hyperledger Cookbook 
