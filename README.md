@@ -15,6 +15,8 @@ Agenda:
 
 You can see the presentation here: 
 
+https://github.com/moolkothari/hsc-asset/blob/master/Hyperledger-Study-Circle.pdf
+
 
 # Compiling & Deploying Chaincode Usuin CLI
 
