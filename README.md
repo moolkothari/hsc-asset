@@ -94,9 +94,9 @@ $ npm i
 
 $ cd hscasset/client && mkdir wallet
 
-$ node enrollAdmin
+$ node enrollAdmin.js
 
-$ node registerUser
+$ node registerUser.js
 
 $ ./startFabric.sh
 
