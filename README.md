@@ -27,6 +27,7 @@ $ cd hscasset && cp ~/work/hsc-asset/chaincode/hscasset.go .
 
  Open Terminal one. 
 This Terminal will start the sample Fabric network. Issue the following commands:
+
 $ cd ~/Desktop/fabric-samples/chaincode-docker-devmode
 
 $ docker-compose -f docker-compose-simple.yaml up
