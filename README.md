@@ -18,7 +18,7 @@ You can see the presentation here:
 https://github.com/moolkothari/hsc-asset/blob/master/Hyperledger-Study-Circle.pdf
 
 
-# Compiling & Deploying Chaincode Usuin CLI
+# Compiling & Deploying Chaincode Using CLI
 
 $ cd ~/Desktop/fabric-samples/chaincode && mkdir hscasset
 
