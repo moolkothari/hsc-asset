@@ -76,7 +76,7 @@ $ peer chaincode query -C myc -n hscasset -c '{"Args":["getHistory","100"]}'
 
 
 
-Clear the network 
+Clear the network when you are done.
 
 $ docker ps -qa | xargs docker stop
 
