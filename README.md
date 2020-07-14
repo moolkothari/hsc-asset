@@ -15,6 +15,9 @@ Agenda:
 
 You can see the presentation here: 
 
+# Session Recording & Presentation 
+https://youtu.be/w-d_Uio0jWA
+
 https://github.com/moolkothari/hsc-asset/blob/master/Hyperledger-Study-Circle.pdf
 
 
